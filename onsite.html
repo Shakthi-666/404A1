@@ -1,49 +1,49 @@
 <!doctype html>
-<header class="site-header">
-<div class="container header-inner">
-<h1 class="brand">Farm404</h1>
-<nav class="main-nav">
-<a href="index.html">Home</a>
-<a href="login.html">Login</a>
-<a href="onsite.html" class="active">Onsite Services</a>
-<a href="crop.html">Crop Recommendation</a>
-</nav>
-</div>
-</header>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farm404 — Onsite Services</title>
+  <link rel="stylesheet" href="styles.css"> <!-- CSS link goes here -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Farm404</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="onsite.html" class="active">Onsite Services</a>
+        <a href="crop.html">Crop Recommendation</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <h2>Onsite Services</h2>
+    <p>Book a visit from our agricultural experts to your farm.</p>
 
-<main class="container">
-<h2>Onsite Services</h2>
-<p>Book a visit from our agricultural experts to your farm.</p>
+    <form id="onsiteForm" class="form-box">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
 
+      <label for="location">Farm Location:</label>
+      <input type="text" id="location" required>
 
-<form id="onsiteForm" class="form-box">
-<label for="name">Name:</label>
-<input type="text" id="name" required>
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" required>
 
+      <button type="submit" class="btn primary">Book Onsite Visit</button>
+    </form>
+    <div id="onsiteResult"></div>
+  </main>
 
-<label for="location">Farm Location:</label>
-<input type="text" id="location" required>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
+    </div>
+  </footer>
 
-
-<label for="date">Preferred Date:</label>
-<input type="date" id="date" required>
-
-
-<button type="submit" class="btn primary">Book Onsite Visit</button>
-</form>
-<div id="onsiteResult"></div>
-</main>
-
-
-<footer class="site-footer">
-<div class="container">
-<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
-</div>
-</footer>
-
-
-<script src="script.js"></script>
-<link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script> <!-- JS stays at the end of body -->
 </body>
 </html>
