@@ -1,34 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Farm404 - Farmer Cart</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Farmer Cart — Farm404</title>
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<header>
-    <h1>Farm404</h1>
-    <p class="tagline">404 not found in Agri</p>
-    <nav>
-        <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="crop.html">Crop Recommendation</a></li>
-            <li><a href="onsite.html">Onsite Consultancy</a></li>
-            <li><a href="land.html">Land Leasing</a></li>
-            <li><a href="help.html">Farming Help</a></li>
-            <li><a href="cart-farmers.html">Farmer Cart</a></li>
-            <li><a href="cart-consumers.html">Consumer Cart</a></li>
-        </ul>
-    </nav>
+<header class="site-header">
+<div class="container header-inner">
+<h1 class="brand">Farm404</h1>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="land.html">Crop Recommendation</a>
+<a href="cart-consumers.html">Shop</a>
+<a href="cart-farmers.html" class="active">Cart (Farmers)</a>
+<a href="help.html">Help</a>
+</nav>
+</div>
 </header>
-<main>
-    <h2>Farmer Cart</h2>
-    <ul>
-        <li><img src="https://source.unsplash.com/100x100/?fertilizer" alt="Fertilizer"> Fertilizer - Qty: <input type="number" value="1"> - ₹500 <button>Add to Cart</button></li>
-        <li><img src="https://source.unsplash.com/100x100/?seed" alt="Seed"> Seed - Qty: <input type="number" value="1"> - ₹200 <button>Add to Cart</button></li>
-        <li><img src="https://source.unsplash.com/100x100/?pesticide" alt="Pesticide"> Pesticide - Qty: <input type="number" value="1"> - ₹300 <button>Add to Cart</button></li>
-    </ul>
+
+
+<main class="container">
+<h2>Farmer Cart & Schedule</h2>
+<div id="farmerCart" class="cart-box"></div>
+
+
+<h3>Book a Schedule</h3>
+<form id="scheduleForm" class="form-box">
+<label for="date">Select Date:</label>
+<input type="date" id="date" required>
+
+
+<label for="time">Select Time:</label>
+<input type="time" id="time" required>
+
+
+<button type="submit" class="btn primary">Book Schedule</button>
+</form>
+
+
+<div id="scheduleResult"></div>
 </main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
+</div>
+</footer>
+
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>

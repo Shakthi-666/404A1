@@ -1,44 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Farm404 - Onsite Consultancy</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-</head>
-<body>
-<header>
-    <h1>Farm404</h1>
-    <p class="tagline">404 not found in Agri</p>
-    <nav>
-        <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="crop.html">Crop Recommendation</a></li>
-            <li><a href="onsite.html">Onsite Consultancy</a></li>
-            <li><a href="land.html">Land Leasing</a></li>
-            <li><a href="help.html">Farming Help</a></li>
-            <li><a href="cart-farmers.html">Farmer Cart</a></li>
-            <li><a href="cart-consumers.html">Consumer Cart</a></li>
-        </ul>
-    </nav>
+<!doctype html>
+<header class="site-header">
+<div class="container header-inner">
+<h1 class="brand">Farm404</h1>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="login.html">Login</a>
+<a href="onsite.html" class="active">Onsite Services</a>
+<a href="crop.html">Crop Recommendation</a>
+</nav>
+</div>
 </header>
-<main>
-    <h2>Onsite Consultancy Booking</h2>
-    <form id="onsiteForm" onsubmit="event.preventDefault(); submitForm('onsiteForm','onsiteResult');">
-        <label>Type of Plan (Soil Testing, Crop Advisory)</label>
-        <input type="text" required>
-        <label>Date for Consultancy</label>
-        <input type="date" required>
-        <label>Location</label>
-        <input type="text" required>
-        <label>Contact Number</label>
-        <input type="tel" required>
-        <button type="submit">Book Now</button>
-    </form>
-    <div id="onsiteResult" style="display:none;">
-        <h3>Your booking is confirmed. Our team will call you soon. If you have any doubt, please contact us at 8903287422.</h3>
-    </div>
+
+
+<main class="container">
+<h2>Onsite Services</h2>
+<p>Book a visit from our agricultural experts to your farm.</p>
+
+
+<form id="onsiteForm" class="form-box">
+<label for="name">Name:</label>
+<input type="text" id="name" required>
+
+
+<label for="location">Farm Location:</label>
+<input type="text" id="location" required>
+
+
+<label for="date">Preferred Date:</label>
+<input type="date" id="date" required>
+
+
+<button type="submit" class="btn primary">Book Onsite Visit</button>
+</form>
+<div id="onsiteResult"></div>
 </main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
+</div>
+</footer>
+
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>

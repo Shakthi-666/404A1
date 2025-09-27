@@ -1,36 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Farm404 - Login</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login — Farm404</title>
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<header>
-    <h1>Farm404</h1>
-    <p class="tagline">404 not found in Agri</p>
-    <nav>
-        <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="crop.html">Crop Recommendation</a></li>
-            <li><a href="onsite.html">Onsite Consultancy</a></li>
-            <li><a href="land.html">Land Leasing</a></li>
-            <li><a href="help.html">Farming Help</a></li>
-            <li><a href="cart-farmers.html">Farmer Cart</a></li>
-            <li><a href="cart-consumers.html">Consumer Cart</a></li>
-        </ul>
-    </nav>
+<header class="site-header">
+<div class="container header-inner">
+<h1 class="brand">Farm404</h1>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="login.html" class="active">Login</a>
+<a href="onsite.html">Onsite Services</a>
+<a href="crop.html">Crop Recommendation</a>
+</nav>
+</div>
 </header>
-<main>
-    <h2>Login</h2>
-    <form>
-        <label>Email ID</label>
-        <input type="email" placeholder="Enter your email" required>
-        <label>Password</label>
-        <input type="password" placeholder="Enter your password" required>
-        <button type="submit">Login</button>
-    </form>
+
+
+<main class="container">
+<h2>Login to Your Account</h2>
+<form id="loginForm" class="form-box">
+<label for="email">Email:</label>
+<input type="email" id="email" required>
+
+
+<label for="password">Password:</label>
+<input type="password" id="password" required>
+
+
+<button type="submit" class="btn primary">Login</button>
+</form>
+<p>Don’t have an account? <a href="#">Register here</a>.</p>
 </main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
+</div>
+</footer>
+
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,34 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Farm404 - Consumer Cart</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shop — Farm404</title>
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<header>
-    <h1>Farm404</h1>
-    <p class="tagline">404 not found in Agri</p>
-    <nav>
-        <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="crop.html">Crop Recommendation</a></li>
-            <li><a href="onsite.html">Onsite Consultancy</a></li>
-            <li><a href="land.html">Land Leasing</a></li>
-            <li><a href="help.html">Farming Help</a></li>
-            <li><a href="cart-farmers.html">Farmer Cart</a></li>
-            <li><a href="cart-consumers.html">Consumer Cart</a></li>
-        </ul>
-    </nav>
+<header class="site-header">
+<div class="container header-inner">
+<h1 class="brand">Farm404</h1>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="land.html">Crop Recommendation</a>
+<a href="cart-consumers.html" class="active">Shop</a>
+<a href="cart-farmers.html">Cart (Farmers)</a>
+<a href="help.html">Help</a>
+</nav>
+</div>
 </header>
-<main>
-    <h2>Consumer Cart</h2>
-    <ul>
-        <li><img src="https://source.unsplash.com/100x100/?fruit" alt="Fruits"> Fruits - Qty: <input type="number" value="1"> - ₹150 <button>Add to Cart</button></li>
-        <li><img src="https://source.unsplash.com/100x100/?vegetable" alt="Vegetables"> Vegetables - Qty: <input type="number" value="1"> - ₹100 <button>Add to Cart</button></li>
-        <li><img src="https://source.unsplash.com/100x100/?cereal" alt="Cereals"> Cereals - Qty: <input type="number" value="1"> - ₹200 <button>Add to Cart</button></li>
-    </ul>
+
+
+<main class="container">
+<h2>Seeds & Fertilizers Shop</h2>
+<div class="shop-grid">
+<div class="item">
+<img src="https://source.unsplash.com/400x300/?wheat,seed" alt="Wheat Seeds">
+<h3>Wheat Seeds</h3>
+<p>₹250 / kg</p>
+<button onclick="addToCart('Wheat Seeds',250)" class="btn small">Add to Cart</button>
+</div>
+<div class="item">
+<img src="https://source.unsplash.com/400x300/?corn,seed" alt="Corn Seeds">
+<h3>Corn Seeds</h3>
+<p>₹200 / kg</p>
+<button onclick="addToCart('Corn Seeds',200)" class="btn small">Add to Cart</button>
+</div>
+<div class="item">
+<img src="https://source.unsplash.com/400x300/?fertilizer" alt="Fertilizer">
+<h3>Organic Fertilizer</h3>
+<p>₹500 / bag</p>
+<button onclick="addToCart('Organic Fertilizer',500)" class="btn small">Add to Cart</button>
+</div>
+</div>
+
+
+<h3>Your Cart</h3>
+<div id="consumerCart" class="cart-box"></div>
 </main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
+</div>
+</footer>
+
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>

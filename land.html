@@ -1,41 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Farm404 - Land Leasing</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+<!doctype html>
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<header>
-    <h1>Farm404</h1>
-    <p class="tagline">404 not found in Agri</p>
-    <nav>
-        <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="crop.html">Crop Recommendation</a></li>
-            <li><a href="onsite.html">Onsite Consultancy</a></li>
-            <li><a href="land.html">Land Leasing</a></li>
-            <li><a href="help.html">Farming Help</a></li>
-            <li><a href="cart-farmers.html">Farmer Cart</a></li>
-            <li><a href="cart-consumers.html">Consumer Cart</a></li>
-        </ul>
-    </nav>
+<header class="site-header">
+<div class="container header-inner">
+<h1 class="brand">Farm404</h1>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="land.html" class="active">Crop Recommendation</a>
+<a href="cart-consumers.html">Shop</a>
+<a href="cart-farmers.html">Cart (Farmers)</a>
+<a href="help.html">Help</a>
+</nav>
+</div>
 </header>
-<main>
-    <h2>Land Leasing</h2>
-    <p>If you own land but don’t have time for agriculture, we can manage it for you.</p>
-    <form id="landForm" onsubmit="event.preventDefault(); submitForm('landForm','landResult');">
-        <label>Area of Land (acres)</label>
-        <input type="number" required>
-        <label>Location</label>
-        <input type="text" required>
-        <button type="submit">Submit</button>
-    </form>
-    <div id="landResult" style="display:none;">
-        <h3>Your booking is appointed. Our team will call you soon. For queries, contact 8903287422.</h3>
-    </div>
+
+
+<main class="container">
+<h2>Crop Recommendation</h2>
+<p>Select soil type and season to get best crop suggestions.</p>
+<form id="cropForm" class="form-box">
+<label for="soil">Soil Type:</label>
+<select id="soil">
+<option value="">--Select--</option>
+<option value="loamy">Loamy</option>
+<option value="clay">Clay</option>
+<option value="sandy">Sandy</option>
+</select>
+
+
+<label for="season">Season:</label>
+<select id="season">
+<option value="">--Select--</option>
+<option value="summer">Summer</option>
+<option value="winter">Winter</option>
+<option value="monsoon">Monsoon</option>
+</select>
+
+
+<button type="button" onclick="getRecommendation()" class="btn primary">Get Recommendation</button>
+</form>
+
+
+<div id="result" class="result-box"></div>
 </main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
+</div>
+</footer>
+
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
