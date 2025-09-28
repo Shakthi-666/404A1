@@ -1,49 +1,59 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Login — Farm404</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login / Register — Farm404</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-<div class="container header-inner">
-<h1 class="brand">Farm404</h1>
-<nav class="main-nav">
-<a href="index.html">Home</a>
-<a href="login.html" class="active">Login</a>
-<a href="onsite.html">Onsite Services</a>
-<a href="crop.html">Crop Recommendation</a>
-</nav>
-</div>
-</header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Farm404</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="login.html" class="active">Login</a>
+        <a href="onsite.html">Onsite Services</a>
+        <a href="crop.html">Crop Recommendation</a>
+        <a href="cart-consumers.html">Shop</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <h2>Login</h2>
 
-<main class="container">
-<h2>Login to Your Account</h2>
-<form id="loginForm" class="form-box">
-<label for="email">Email:</label>
-<input type="email" id="email" required>
+    <div class="form-box auth-box">
+      <form id="loginForm">
+        <label for="loginEmail">Email</label>
+        <input id="loginEmail" type="email" required>
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" type="password" required>
+        <button class="btn primary" type="submit">Login</button>
+      </form>
 
+      <div class="divider">or</div>
 
-<label for="password">Password:</label>
-<input type="password" id="password" required>
+      <form id="registerForm">
+        <label for="regName">Name</label>
+        <input id="regName" type="text" required>
+        <label for="regEmail">Email</label>
+        <input id="regEmail" type="email" required>
+        <label for="regPassword">Password</label>
+        <input id="regPassword" type="password" required>
+        <button class="btn outline" type="submit">Register</button>
+      </form>
+    </div>
 
+    <div id="authMessage" class="result-box" style="display:none;"></div>
+  </main>
 
-<button type="submit" class="btn primary">Login</button>
-</form>
-<p>Don’t have an account? <a href="#">Register here</a>.</p>
-</main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year2"></span> Farm404</p>
+    </div>
+  </footer>
 
-
-<footer class="site-footer">
-<div class="container">
-<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
-</div>
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

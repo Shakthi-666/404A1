@@ -1,56 +1,56 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Help — Farm404</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Help — Farm404</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-<div class="container header-inner">
-<h1 class="brand">Farm404</h1>
-<nav class="main-nav">
-<a href="index.html">Home</a>
-<a href="land.html">Crop Recommendation</a>
-<a href="cart-consumers.html">Shop</a>
-<a href="cart-farmers.html">Cart (Farmers)</a>
-<a href="help.html" class="active">Help</a>
-</nav>
-</div>
-</header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Farm404</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="onsite.html">Onsite Services</a>
+        <a href="crop.html">Crop Recommendation</a>
+        <a href="help.html" class="active">Help</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <h2>Help & Resources</h2>
+    <div class="form-box">
+      <h3>Quick Guides</h3>
+      <ul>
+        <li>Soil testing basics</li>
+        <li>Seed selection checklist</li>
+        <li>Irrigation scheduling</li>
+      </ul>
+    </div>
 
-<main class="container">
-<h2>Help & Support</h2>
-<p>If you have questions or feedback, please fill out the form below.</p>
+    <h3>Contact & Feedback</h3>
+    <form id="helpForm" class="form-box">
+      <label for="fbName">Name</label>
+      <input id="fbName" type="text" required>
+      <label for="fbEmail">Email</label>
+      <input id="fbEmail" type="email" required>
+      <label for="fbMessage">Message</label>
+      <textarea id="fbMessage" rows="4" required></textarea>
+      <button class="btn primary" type="submit">Send</button>
+    </form>
 
+    <div id="fbResult" class="result-box" style="display:none;"></div>
+  </main>
 
-<form id="helpForm" class="form-box">
-<label for="name">Name:</label>
-<input type="text" id="name" required>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year7"></span> Farm404</p>
+    </div>
+  </footer>
 
-
-<label for="email">Email:</label>
-<input type="email" id="email" required>
-
-
-<label for="message">Message:</label>
-<textarea id="message" rows="5" required></textarea>
-
-
-<button type="submit" class="btn primary">Submit</button>
-</form>
-</main>
-
-
-<footer class="site-footer">
-<div class="container">
-<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
-</div>
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

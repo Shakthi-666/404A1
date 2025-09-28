@@ -1,69 +1,83 @@
 <!doctype html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Farm404 — 404 not found in Agri</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Farm404 — 404 not found in Agri</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-<div class="container header-inner">
-<h1 class="brand">Farm404</h1>
-<nav class="main-nav">
-<a href="index.html" class="active">Home</a>
-<a href="login.html">Login</a>
-<a href="onsite.html">Onsite Services</a>
-<a href="crop.html">Crop Recommendation</a>
-</nav>
-</div>
-</header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Farm404</h1>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="login.html">Login</a>
+        <a href="onsite.html">Onsite Services</a>
+        <a href="crop.html">Crop Recommendation</a>
+        <a href="cart-consumers.html">Shop</a>
+      </nav>
+      <button id="mobile-toggle" class="mobile-toggle">☰</button>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Smart Farming with Farm404</h2>
+          <p>404 not found in Agri — we bring digital tools for better crop selection, onsite assistance, and easy access to resources.</p>
+          <div class="hero-cta">
+            <a href="crop.html" class="btn primary">Get Crop Recommendation</a>
+            <a href="onsite.html" class="btn outline">Onsite Services</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://source.unsplash.com/collection/1424340/900x600" alt="Agriculture field">
+        </div>
+      </div>
+    </section>
 
-<main>
-<section class="hero">
-<div class="container hero-inner">
-<div class="hero-text">
-<h2>Smart Farming with Farm404</h2>
-<p>404 not found in Agri — we bring digital tools for better crop selection, onsite assistance, and easy access to resources.</p>
-<div class="hero-cta">
-<a href="crop.html" class="btn primary">Get Crop Recommendation</a>
-<a href="onsite.html" class="btn outline">Onsite Services</a>
-</div>
-</div>
-<div class="hero-visual">
-<img src="c:\Users\rames\Downloads\polina-rytova-1dGMs4hhcVA-unsplash.jpg" alt="Agriculture field">
-</div>
-</div>
-</section>
+    <section class="features container">
+      <article class="feature">
+        <h3>Crop Guidance</h3>
+        <p>Personalized crop suggestions based on soil and season.</p>
+        <a href="crop.html" class="btn small">Explore</a>
+      </article>
+      <article class="feature">
+        <h3>Onsite Services</h3>
+        <p>Book field visits and get expert help on your farm.</p>
+        <a href="onsite.html" class="btn small">Book</a>
+      </article>
+      <article class="feature">
+        <h3>Marketplace</h3>
+        <p>Buy seeds, fertilizers and tools. Cart persists across visits.</p>
+        <a href="cart-consumers.html" class="btn small">Shop</a>
+      </article>
+    </section>
 
+    <section class="gallery container">
+      <h2>From the fields</h2>
+      <div class="grid">
+        <img src="https://source.unsplash.com/600x400/?harvest" alt="harvest">
+        <img src="https://source.unsplash.com/600x400/?tractor" alt="tractor">
+        <img src="https://source.unsplash.com/600x400/?paddy" alt="paddy">
+        <img src="https://source.unsplash.com/600x400/?orchard" alt="orchard">
+      </div>
+    </section>
 
-<section class="features container">
-<article class="feature">
-<h3>Crop Guidance</h3>
-<p>Personalized crop suggestions based on soil type and climate conditions.</p>
-<a href="crop.html" class="btn small">Explore</a>
-</article>
-<article class="feature">
-<h3>Onsite Services</h3>
-<p>Book field visits and consultations from agricultural experts.</p>
-<a href="onsite.html" class="btn small">Book</a>
-</article>
-<article class="feature">
-<h3>Login to Dashboard</h3>
-<p>Access saved recommendations, past orders, and schedules in one place.</p>
-<a href="login.html" class="btn small">Login</a>
-</article>
-</section>
-</main>
+    <section class="about container">
+      <h2>About Farm404</h2>
+      <p>Farm404 is a lightweight platform for farmers and buyers: crop recommendations, onsite visits, and a simple marketplace to get started quickly.</p>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
+    </div>
+  </footer>
 
-<footer class="site-footer">
-<div class="container">
-<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
-</div>
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

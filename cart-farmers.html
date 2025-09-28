@@ -1,57 +1,54 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Farmer Cart — Farm404</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Farmer Tools — Farm404</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-<div class="container header-inner">
-<h1 class="brand">Farm404</h1>
-<nav class="main-nav">
-<a href="index.html">Home</a>
-<a href="land.html">Crop Recommendation</a>
-<a href="cart-consumers.html" class="active">Shop</a>
-<a href="cart-farmers.html">Cart (Farmers)</a>
-<a href="cart-farmers.html" class="active">Cart (Farmers)</a>
-<a href="help.html">Help</a>
-</nav>
-</div>
-</header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Farm404</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="onsite.html">Onsite Services</a>
+        <a href="crop.html">Crop Recommendation</a>
+        <a href="cart-farmers.html" class="active">Farmer Tools</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <h2>Farmer Scheduling & Cart</h2>
 
-<main class="container">
-<h2>Farmer Cart & Schedule</h2>
-<div id="farmerCart" class="cart-box"></div>
+    <section class="card">
+      <h3>Schedule a Visit</h3>
+      <form id="scheduleForm" class="form-box">
+        <label for="farmerName">Name</label>
+        <input id="farmerName" type="text" required>
+        <label for="farmerPhone">Phone</label>
+        <input id="farmerPhone" type="tel" required>
+        <label for="visitDate">Preferred Date</label>
+        <input id="visitDate" type="date" required>
+        <button class="btn primary" type="submit">Request Visit</button>
+      </form>
+      <div id="scheduleResult" class="result-box" style="display:none;"></div>
+    </section>
 
+    <section class="card">
+      <h3>Farmer Bulk Cart</h3>
+      <div id="farmerCart" class="cart-box">No items yet.</div>
+    </section>
+  </main>
 
-<h3>Book a Schedule</h3>
-<form id="scheduleForm" class="form-box">
-<label for="date">Select Date:</label>
-<input type="date" id="date" required>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year6"></span> Farm404</p>
+    </div>
+  </footer>
 
-
-<label for="time">Select Time:</label>
-<input type="time" id="time" required>
-
-
-<button type="submit" class="btn primary">Book Schedule</button>
-</form>
-
-
-<div id="scheduleResult"></div>
-</main>
-
-
-<footer class="site-footer">
-<div class="container">
-<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
-</div>
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

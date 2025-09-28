@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Farm404 — Onsite Services</title>
-  <link rel="stylesheet" href="styles.css"> <!-- CSS link goes here -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Onsite Services — Farm404</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
@@ -15,35 +15,34 @@
         <a href="login.html">Login</a>
         <a href="onsite.html" class="active">Onsite Services</a>
         <a href="crop.html">Crop Recommendation</a>
+        <a href="cart-consumers.html">Shop</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h2>Onsite Services</h2>
-    <p>Book a visit from our agricultural experts to your farm.</p>
-
+    <h2>Book Onsite Visit</h2>
     <form id="onsiteForm" class="form-box">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required>
-
-      <label for="location">Farm Location:</label>
-      <input type="text" id="location" required>
-
-      <label for="date">Preferred Date:</label>
-      <input type="date" id="date" required>
-
-      <button type="submit" class="btn primary">Book Onsite Visit</button>
+      <label for="onsiteName">Name</label>
+      <input id="onsiteName" type="text" required>
+      <label for="onsitePhone">Phone</label>
+      <input id="onsitePhone" type="tel" required>
+      <label for="onsiteLocation">Farm Location</label>
+      <input id="onsiteLocation" type="text" required>
+      <label for="onsiteDate">Preferred Date</label>
+      <input id="onsiteDate" type="date" required>
+      <button class="btn primary" type="submit">Request Visit</button>
     </form>
-    <div id="onsiteResult"></div>
+
+    <div id="onsiteResult" class="result-box" style="display:none;"></div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
+      <p>&copy; <span id="year3"></span> Farm404</p>
     </div>
   </footer>
 
-  <script src="script.js"></script> <!-- JS stays at the end of body -->
+  <script src="script.js"></script>
 </body>
 </html>

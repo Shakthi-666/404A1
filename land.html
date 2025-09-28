@@ -1,57 +1,58 @@
 <!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farm404 - Crop Recommendation</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header class="site-header">
-<div class="container header-inner">
-<h1 class="brand">Farm404</h1>
-<nav class="main-nav">
-<a href="index.html">Home</a>
-<a href="land.html" class="active">Crop Recommendation</a>
-<a href="cart-consumers.html">Shop</a>
-<a href="cart-farmers.html">Cart (Farmers)</a>
-<a href="help.html">Help</a>
-</nav>
-</div>
+  <div class="container header-inner">
+    <h1 class="brand">Farm404</h1>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="land.html" class="active">Crop Recommendation</a>
+      <a href="cart-consumers.html">Shop</a>
+      <a href="cart-farmers.html">Cart (Farmers)</a>
+      <a href="help.html">Help</a>
+    </nav>
+  </div>
 </header>
 
-
 <main class="container">
-<h2>Crop Recommendation</h2>
-<p>Select soil type and season to get best crop suggestions.</p>
-<form id="cropForm" class="form-box">
-<label for="soil">Soil Type:</label>
-<select id="soil">
-<option value="">--Select--</option>
-<option value="loamy">Loamy</option>
-<option value="clay">Clay</option>
-<option value="sandy">Sandy</option>
-</select>
+  <h2>Crop Recommendation</h2>
+  <p>Select soil type and season to get the best crop suggestions.</p>
+  
+  <form id="cropForm" class="form-box">
+    <label for="soil">Soil Type:</label>
+    <select id="soil">
+      <option value="">--Select--</option>
+      <option value="loamy">Loamy</option>
+      <option value="clay">Clay</option>
+      <option value="sandy">Sandy</option>
+    </select>
 
+    <label for="season">Season:</label>
+    <select id="season">
+      <option value="">--Select--</option>
+      <option value="summer">Summer</option>
+      <option value="winter">Winter</option>
+      <option value="monsoon">Monsoon</option>
+    </select>
 
-<label for="season">Season:</label>
-<select id="season">
-<option value="">--Select--</option>
-<option value="summer">Summer</option>
-<option value="winter">Winter</option>
-<option value="monsoon">Monsoon</option>
-</select>
+    <button type="button" id="recommendBtn" class="btn primary">Get Recommendation</button>
+  </form>
 
-
-<button type="button" onclick="getRecommendation()" class="btn primary">Get Recommendation</button>
-</form>
-
-
-<div id="result" class="result-box"></div>
+  <div id="result" class="result-box"></div>
 </main>
 
-
 <footer class="site-footer">
-<div class="container">
-<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
-</div>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
+  </div>
 </footer>
-
 
 <script src="script.js"></script>
 </body>

@@ -1,62 +1,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Shop — Farm404</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Farm404</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-<div class="container header-inner">
-<h1 class="brand">Farm404</h1>
-<nav class="main-nav">
-<a href="index.html">Home</a>
-<a href="land.html">Crop Recommendation</a>
-<a href="cart-consumers.html" class="active">Shop</a>
-<a href="cart-consumers.html">Cart (Consumers)</a>
-<a href="help.html">Help</a>
-</nav>
-</div>
-</header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Farm404</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="onsite.html">Onsite Services</a>
+        <a href="crop.html">Crop Recommendation</a>
+        <a href="cart-consumers.html" class="active">Shop</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <h2>Seeds & Fertilizers Shop</h2>
+    <div id="shopGrid" class="shop-grid"></div>
 
-<main class="container">
-<h2>Seeds & Fertilizers Shop</h2>
-<div class="shop-grid">
-<div class="item">
-<img src="https://source.unsplash.com/400x300/?wheat,seed" alt="Wheat Seeds">
-<h3>Wheat Seeds</h3>
-<p>₹250 / kg</p>
-<button onclick="addToCart('Wheat Seeds',250)" class="btn small">Add to Cart</button>
-</div>
-<div class="item">
-<img src="https://source.unsplash.com/400x300/?corn,seed" alt="Corn Seeds">
-<h3>Corn Seeds</h3>
-<p>₹200 / kg</p>
-<button onclick="addToCart('Corn Seeds',200)" class="btn small">Add to Cart</button>
-</div>
-<div class="item">
-<img src="https://source.unsplash.com/400x300/?fertilizer" alt="Fertilizer">
-<h3>Organic Fertilizer</h3>
-<p>₹500 / bag</p>
-<button onclick="addToCart('Organic Fertilizer',500)" class="btn small">Add to Cart</button>
-</div>
-</div>
+    <h3>Your Cart</h3>
+    <div id="consumerCart" class="cart-box"></div>
+    <div class="cart-actions">
+      <button id="clearCartBtn" class="btn outline">Clear Cart</button>
+      <button id="checkoutBtn" class="btn primary">Checkout</button>
+    </div>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year5"></span> Farm404</p>
+    </div>
+  </footer>
 
-<h3>Your Cart</h3>
-<div id="consumerCart" class="cart-box"></div>
-</main>
-
-
-<footer class="site-footer">
-<div class="container">
-<p>&copy; <span id="year"></span> Farm404 — 404 not found in Agri</p>
-</div>
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
